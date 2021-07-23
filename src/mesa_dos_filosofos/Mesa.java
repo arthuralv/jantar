@@ -102,10 +102,14 @@ public class Mesa {
 
 
     public void showTentativas() {
-        System.out.print("filosofos que tentaram comer = ( ");
+        System.out.print("filosofos que tentaram comer = (");
 
         for (int i = 0; i < qtdFilosofos; i++) {
-            System.out.print(filosofos[i] + " ");
+            if (i < qtdFilosofos - 1) {
+                System.out.print(filosofos[i] + ", ");
+            } else {
+                System.out.print(filosofos[i]);
+            }
         }
 
         System.out.println(")");
@@ -127,7 +131,10 @@ public class Mesa {
                     texto = "comendo";
                     break;
             }
-            System.out.print(texto + " ");
+            if (i < qtdFilosofos - 1) {
+                texto += ", ";
+            }
+            System.out.print(texto);
         }
 
         System.out.println(")");

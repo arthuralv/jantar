@@ -4,8 +4,7 @@ public class Filosofo extends Thread {
     Mesa mesa;
     int filosofo;
 
-    public Filosofo(String nome, Mesa mesa, int fil) {
-        super(nome);
+    public Filosofo(Mesa mesa, int fil) {
         this.mesa = mesa;
         filosofo = fil;
     }

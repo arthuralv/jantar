@@ -5,7 +5,7 @@ public class Jantar {
         Mesa mesa = new Mesa();
         
         for (int filosofo = 0; filosofo < 5; filosofo++) {
-            new Filosofo(filosofo + "° Filosofo_", mesa, filosofo).start();
+            new Filosofo(mesa, filosofo).start();
         }
     }
 }
